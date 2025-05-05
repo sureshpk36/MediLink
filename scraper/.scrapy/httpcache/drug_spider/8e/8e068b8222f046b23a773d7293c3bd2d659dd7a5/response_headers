@@ -1,0 +1,18 @@
+Date: Sun, 04 May 2025 09:26:34 GMT
+Content-Type: text/xml
+Set-Cookie: AWSALBTG=ompY9nxeRK2ZGLzZIGpWWx8GAf6ue/9jNpwgJZQ8+oPlJIsxNJgV+9hVqbgTEcuwaeeIJCigz8QVkXb1yM7CPDXpo3p3TkGpNlyMBDZ8DFvK45p9SVVoDHK2k9x3ZVpISAmrChxIbdcSglFhFDQW/TwyyBJqo8NNW+XKrx64WHWl; Expires=Sun, 11 May 2025 09:26:34 GMT; Path=/
+Set-Cookie: AWSALBTGCORS=ompY9nxeRK2ZGLzZIGpWWx8GAf6ue/9jNpwgJZQ8+oPlJIsxNJgV+9hVqbgTEcuwaeeIJCigz8QVkXb1yM7CPDXpo3p3TkGpNlyMBDZ8DFvK45p9SVVoDHK2k9x3ZVpISAmrChxIbdcSglFhFDQW/TwyyBJqo8NNW+XKrx64WHWl; Expires=Sun, 11 May 2025 09:26:34 GMT; Path=/; SameSite=None; Secure
+Vary: Accept-Encoding
+X-Amz-Id-2: A3vTzJqUpP6Er4hOtpepPzgcRwv/qQoTHBsy/SYM+E0E/Fm+R0b687MNUaENHoRrWesvZUhqcME=
+X-Amz-Request-Id: 97S4VWQANS61XQSD
+Last-Modified: Thu, 16 Jan 2025 03:10:17 GMT
+Etag: W/"fde8c817153fbbb4132d67ab67f4afd8"
+X-Amz-Server-Side-Encryption: AES256
+Pragma: public
+Access-Control-Expose-Headers: TMP_HKP_USER_ID
+Cache-Control: public
+Content-Encoding: gzip
+Cf-Cache-Status: DYNAMIC
+Server-Timing: cfCacheStatus;desc="DYNAMIC"
+Server: cloudflare
+Cf-Ray: 93a6f50efacf85d8-BOM

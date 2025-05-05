@@ -1,0 +1,33 @@
+Date: Sun, 04 May 2025 09:27:52 GMT
+Content-Type: text/html; charset=utf-8
+Set-Cookie: AWSALBTG=A6jC6BRmurU9SNBUJ1Z98rNZgXbO6fwYzHLk10dE3iuWDqbOR0WkiUtRcfYakA0eyWDt3HibDVzUEaFYXtHKjd7/5bWMMm7LKdOIx0bUXRK6v0CXpSQ49zW4PS+O+KwS+DyK3kYznFrSenkJ6fPdEFhcbdKvB+epoy2bDFyvMTGN; Expires=Sun, 11 May 2025 09:27:52 GMT; Path=/
+Set-Cookie: AWSALBTGCORS=A6jC6BRmurU9SNBUJ1Z98rNZgXbO6fwYzHLk10dE3iuWDqbOR0WkiUtRcfYakA0eyWDt3HibDVzUEaFYXtHKjd7/5bWMMm7LKdOIx0bUXRK6v0CXpSQ49zW4PS+O+KwS+DyK3kYznFrSenkJ6fPdEFhcbdKvB+epoy2bDFyvMTGN; Expires=Sun, 11 May 2025 09:27:52 GMT; Path=/; SameSite=None; Secure
+Set-Cookie: @synapse/init=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: @synapse/config=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: @synapse/legacy=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: @synapse/platform=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: city=Gurgaon; Max-Age=2592000; Path=/; Expires=Tue, 03 Jun 2025 09:27:52 GMT
+Set-Cookie: geolocation=true; Max-Age=2592000; Path=/; Expires=Tue, 03 Jun 2025 09:27:52 GMT
+Set-Cookie: abVisitorId=369083; Path=/; Expires=Mon, 01 Jan 2125 00:00:00 GMT; HttpOnly
+Set-Cookie: abExperimentShow=false; Path=/; Expires=Mon, 01 Jan 2125 00:00:00 GMT; HttpOnly
+Set-Cookie: amoSessionId=142d960d-b0e0-42a3-8c3b-ef55d8568379; Max-Age=1800; Path=/; Expires=Sun, 04 May 2025 09:57:52 GMT
+Set-Cookie: _csrf=61DraFHvhkL2bhOF32ZO9lFq; Path=/; HttpOnly
+Set-Cookie: isLocaleRedirect=false; Path=/
+Set-Cookie: isLocaleUIChange=false; Path=/
+Vary: Accept-Encoding
+Visitor-Id: a8bee097-6533-4bf6-881f-db5fca0806ad_lv6KrqVQFp_0123_1746350789634
+X-Visitor-Id: a8bee097-6533-4bf6-881f-db5fca0806ad_lv6KrqVQFp_0123_1746350789634
+X-Dns-Prefetch-Control: off
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Pragma: public
+Access-Control-Expose-Headers: TMP_HKP_USER_ID
+Cache-Control: public
+Cf-Cache-Status: DYNAMIC
+Server-Timing: cfCacheStatus;desc="DYNAMIC"
+Server: cloudflare
+Cf-Ray: 93a6f6f74b1285d8-BOM
+Content-Encoding: br

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://medilink.vercel.app/sitemap.xml

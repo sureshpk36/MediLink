@@ -1,0 +1,21 @@
+Date: Sun, 04 May 2025 09:26:29 GMT
+Content-Type: text/plain; charset=UTF-8
+Vary: Accept-Encoding
+Visitor-Id: a8bee097-6533-4bf6-881f-db5fca0806ad_lv6KrqVQFp_0123_1746350789634
+X-Visitor-Id: a8bee097-6533-4bf6-881f-db5fca0806ad_lv6KrqVQFp_0123_1746350789634
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 30 Apr 2025 17:09:59 GMT
+Etag: W/"326-19687ad3a58"
+Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS, DELETE, PATCH
+Access-Control-Allow-Headers: x-1mglabs-platform,Pragma,DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,authorization,hkp-platform,x-csrf-token,x-html-canrender,x-platform,user-device
+Access-Control-Expose-Headers: Content-Length,Content-Range
+Content-Security-Policy: frame-ancestors 'self' https://cont-sites.bajajfinserv.in/ https://www.bajajfinserv.in/ https://www.1mg.com/ https://chatbot.tatadigital.com/ https://www.tatadigital.com/ https://www.tataneu.com/
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;
+Cf-Cache-Status: BYPASS
+Set-Cookie: AWSALBTG=5T+pxOoqUyQUb9+RdI2/yo2RXlpsmNPuLI300PkgvUD5EAeLYtG/b/e8e4yLRRs3sFpsR79CmpnxZUxJLR8HEIKCgzV2TSJ98KIKTSl+vM1exZy3Ud8SAdWa5s5GWkh5bA7GwU8WjLk9tpwMoipTGriMQmpIRbXttTapeKn9T3q2; Expires=Sun, 11 May 2025 09:26:29 GMT; Path=/
+Set-Cookie: AWSALBTGCORS=5T+pxOoqUyQUb9+RdI2/yo2RXlpsmNPuLI300PkgvUD5EAeLYtG/b/e8e4yLRRs3sFpsR79CmpnxZUxJLR8HEIKCgzV2TSJ98KIKTSl+vM1exZy3Ud8SAdWa5s5GWkh5bA7GwU8WjLk9tpwMoipTGriMQmpIRbXttTapeKn9T3q2; Expires=Sun, 11 May 2025 09:26:29 GMT; Path=/; SameSite=None; Secure
+Set-Cookie: VISITOR-ID=a8bee097-6533-4bf6-881f-db5fca0806ad_lv6KrqVQFp_0123_1746350789634; Domain=.1mg.com;Path=/; Expires=Wed, 09 Jun 2116 10:18:14 GMT;
+Server-Timing: cfCacheStatus;desc="BYPASS"
+Server: cloudflare
+Cf-Ray: 93a6f4f30bec79de-HYD
+Content-Encoding: br

@@ -1,0 +1,432 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 30% 98%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 142 76% 45%;
+    --chart-2: 160 76% 45%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 150 15% 10%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142 76% 60%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 142 60% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes floatingBubbles {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-15px) scale(1.05);
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    25% {
+      transform: translateY(-10px) translateX(10px);
+    }
+    50% {
+      transform: translateY(0px) translateX(20px);
+    }
+    75% {
+      transform: translateY(10px) translateX(10px);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    isolation: isolate;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(120deg, 
+        hsla(160, 100%, 95%, 0.8) 0%, 
+        hsla(140, 100%, 97%, 0.5) 25%, 
+        hsla(170, 100%, 96%, 0.7) 50%, 
+        hsla(150, 100%, 97%, 0.6) 75%, 
+        hsla(140, 100%, 95%, 0.8) 100%
+      );
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    z-index: -2;
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 30%, hsla(160, 100%, 80%, 0.15) 0, transparent 200px),
+      radial-gradient(circle at 80% 20%, hsla(140, 100%, 80%, 0.15) 0, transparent 200px),
+      radial-gradient(circle at 50% 60%, hsla(170, 100%, 80%, 0.1) 0, transparent 200px),
+      radial-gradient(circle at 10% 70%, hsla(150, 100%, 80%, 0.1) 0, transparent 150px),
+      radial-gradient(circle at 90% 90%, hsla(130, 100%, 80%, 0.1) 0, transparent 150px);
+    z-index: -1;
+  }
+  
+  /* Grid pattern overlay */
+  .grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(to right, hsla(160, 100%, 50%, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, hsla(160, 100%, 50%, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /* Floating elements for more depth */
+  .floating-element-1 {
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(160, 100%, 85%, 0.4), transparent);
+    filter: blur(20px);
+    animation: floatingBubbles 8s ease-in-out infinite;
+    z-index: -1;
+  }
+  
+  .floating-element-2 {
+    position: fixed;
+    top: 60%;
+    right: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(140, 100%, 85%, 0.3), transparent);
+    filter: blur(25px);
+    animation: floatingBubbles 12s ease-in-out infinite;
+    animation-delay: 2s;
+    z-index: -1;
+  }
+  
+  .floating-element-3 {
+    position: fixed;
+    bottom: 20%;
+    left: 20%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(170, 100%, 85%, 0.25), transparent);
+    filter: blur(15px);
+    animation: floatingBubbles 10s ease-in-out infinite;
+    animation-delay: 1s;
+    z-index: -1;
+  }
+  
+  /* DNA helix animation */
+  .dna-container {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 100px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.2;
+    transform: rotate(-15deg);
+    filter: blur(1px);
+  }
+  
+  .dna-strand {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .dna-helix-1, .dna-helix-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dna-helix-1::before, .dna-helix-2::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: hsla(160, 100%, 50%, 0.3);
+  }
+  
+  .dna-helix-1::before {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .dna-helix-2::before {
+    animation: float 3s ease-in-out infinite reverse;
+  }
+  
+  /* Molecule animation */
+  .molecule {
+    position: fixed;
+    bottom: 10%;
+    right: 15%;
+    z-index: -1;
+    opacity: 0.15;
+  }
+  
+  .molecule-center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: hsla(150, 100%, 50%, 0.5);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite;
+    filter: blur(1px);
+  }
+  
+  .molecule-orbit {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid hsla(150, 100%, 60%, 0.2);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+    filter: blur(0.5px);
+  }
+  
+  .molecule-particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: hsla(160, 100%, 60%, 0.4);
+    border-radius: 50%;
+    filter: blur(1px);
+  }
+  
+  .molecule-particle:nth-child(1) {
+    top: 0;
+    left: 45px;
+  }
+  
+  .molecule-particle:nth-child(2) {
+    top: 45px;
+    right: 0;
+  }
+  
+  .molecule-particle:nth-child(3) {
+    bottom: 0;
+    left: 45px;
+  }
+  
+  .molecule-particle:nth-child(4) {
+    top: 45px;
+    left: 0;
+  }
+  
+  /* Dark mode treatment */
+  .dark body::before {
+    background: 
+      linear-gradient(120deg, 
+        hsla(160, 80%, 10%, 0.8) 0%, 
+        hsla(140, 70%, 15%, 0.7) 25%, 
+        hsla(170, 70%, 12%, 0.8) 50%, 
+        hsla(150, 70%, 15%, 0.7) 75%, 
+        hsla(140, 80%, 10%, 0.8) 100%
+      );
+  }
+  
+  .dark body::after {
+    background-image: 
+      radial-gradient(circle at 20% 30%, hsla(160, 100%, 30%, 0.2) 0, transparent 200px),
+      radial-gradient(circle at 80% 20%, hsla(140, 100%, 30%, 0.2) 0, transparent 200px),
+      radial-gradient(circle at 50% 60%, hsla(170, 100%, 30%, 0.15) 0, transparent 200px),
+      radial-gradient(circle at 10% 70%, hsla(150, 100%, 30%, 0.1) 0, transparent 150px),
+      radial-gradient(circle at 90% 90%, hsla(130, 100%, 30%, 0.1) 0, transparent 150px);
+  }
+  
+  .dark .grid-overlay {
+    background-image: 
+      linear-gradient(to right, hsla(160, 100%, 50%, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, hsla(160, 100%, 50%, 0.05) 1px, transparent 1px);
+  }
+  
+  .dark .floating-element-1 {
+    background: radial-gradient(circle, hsla(160, 100%, 25%, 0.4), transparent);
+  }
+  
+  .dark .floating-element-2 {
+    background: radial-gradient(circle, hsla(140, 100%, 25%, 0.3), transparent);
+  }
+  
+  .dark .floating-element-3 {
+    background: radial-gradient(circle, hsla(170, 100%, 25%, 0.25), transparent);
+  }
+  
+  .dark .dna-helix-1::before, .dark .dna-helix-2::before {
+    background: hsla(160, 100%, 40%, 0.3);
+  }
+  
+  .dark .molecule-center {
+    background: hsla(150, 100%, 40%, 0.5);
+  }
+  
+  .dark .molecule-orbit {
+    border-color: hsla(150, 100%, 40%, 0.2);
+  }
+  
+  .dark .molecule-particle {
+    background: hsla(160, 100%, 40%, 0.4);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-3 py-2 text-sm font-medium rounded-md text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors;
+  }
+
+  .nav-link.active {
+    @apply text-primary bg-muted;
+  }
+  
+  .glassmorphism {
+    @apply bg-background/80 backdrop-blur-md border border-border/50;
+  }
+  
+  .shadow-glow-sm {
+    @apply shadow-[0_0_15px_rgba(0,200,100,0.15)];
+  }
+}
